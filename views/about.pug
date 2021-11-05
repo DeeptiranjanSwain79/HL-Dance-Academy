@@ -1,0 +1,29 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style
+    style
+      include ../static/style.css
+      include ../static/styleAbout.css
+
+    nav#navbar
+        ul
+            div#logo
+                img(src="../static/logo.jpg", alt="", srcset="")
+            li #[a(href="/") Home]
+            li #[a(href="/about") About]
+            li #[a(href="/services") Services]
+            li #[a(href="/class") Class Info]
+            li #[a(href="/contact", target='_blank') Contact Us]
+    div#heading
+        h2 About Us
+    div.container
+        p HL Dance Academy is the national service organization for professional dance, serving a broad cross-section of the dance field. Established in 2002, HL Dance Academy champions an inclusive and equitable dance field by leading, convening, advocating, and supporting individuals and organizations.
+        hr 
+        p The HL Dance Academy is India's most innovative training facility for dancers. HL Dance Academy was founded with the intent to provide India's youth with an opportunity to learn and experience dance through an artistic lens.
+        hr
+        p Due to COVID-19, we are following protocols to keep our instructors, dancers and their families safe and healthy. We will maintain these same guidelines for our open house. All instructors present will be wearing face coverings and anyone entering the studio will be required to do the same. We will also limit the number of people in our lobby at any given time in an effort to encourage social distancing. If you would like more information, please visit hldanceacademy.com or call us at 8917206636.
+    footer#footer 
+        div.foot Copyright &copy; www.hldanceacademy.com | All rights reserved

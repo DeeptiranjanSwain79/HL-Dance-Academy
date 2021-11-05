@@ -1,0 +1,30 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style
+    style
+      include ../static/style.css
+      include ../static/styleServices.css
+
+    nav#navbar
+        ul
+            div#logo
+                img(src="../static/logo.jpg", alt="", srcset="")
+            li #[a(href="/") Home]
+            li #[a(href="/about") About]
+            li #[a(href="/services") Services]
+            li #[a(href="/class") Class Info]
+            li #[a(href="/contact", target='_blank') Contact Us]
+        div#heading
+            h2 Our Services
+        div.container
+            p We don’t host multiple recitals every year with expensive costumes. Our end goal is never competitive dancing. Instead, we give kids a chance to learn dance skills and have fun without pressure. We believe in kindness above all. Our classes are places where every child can feel welcome – no matter their level of dance experience or their background.
+            hr 
+            p HL Dance Academy an inclusive and equitable dance field by leading, convening, advocating, and supporting individuals and organizations. HL Dance Academy's core programs are focused in the areas of engagement, advocacy, research, and preservation.
+            hr
+            p Due to COVID-19, we are following protocols to keep our instructors, dancers and their families safe and healthy. We will maintain these same guidelines for our open house. All instructors present will be wearing face coverings and anyone entering the studio will be required to do the same. We will also limit the number of people in our lobby at any given time in an effort to encourage social distancing. If you would like more information, please visit hldanceacademy.com or call us at 8917206636.            
+        footer#footer 
+            div.foot Copyright &copy; www.hldanceacademy.com | All rights reserved
+            

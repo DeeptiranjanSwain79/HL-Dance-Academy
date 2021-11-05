@@ -1,0 +1,58 @@
+//- index.pug 
+//- Copied from pug documnetation 
+//- This is a comment
+doctype html
+html
+  head
+    title HL Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="../static/logo.jpg", alt="", srcset="")
+            li #[a(href="/") Home]
+            li #[a(href="/about") About]
+            li #[a(href="/services") Services]
+            li #[a(href="/class") Class Info]
+            li #[a(href="/contact", target='_blank') Contact Us]
+
+    section#introSection 
+        div Welcome to HL Dance Academy 
+        div.mid Eat Dance Sleep Repeat 
+        div.small #ABCD 
+
+    section#heading 
+        h3 Our Mission
+
+    section#ourMission
+        div.card
+            h3 Dance Perfection
+            div#logoM
+                img(src="../static/1.png", alt="")
+        div.card
+            h3 Dance the way you like
+            div#logoM
+                img(src="../static/2.png", alt="")
+        div.card
+            h3 Awesome teaching
+            div#logoM
+                img(src="../static/3.png", alt="")
+
+    section#heading 
+        h3 Our Sponsers:
+
+    section#sponsersSection
+        div.sponser
+            img(src="../static/hritik.png", alt="Hritik Roshan", srcset="")
+        div.sponser
+            img(src="../static/allu.png", alt="Allu Arjun", srcset="")
+        div.sponser
+            img(src="../static/tiger.png", alt="Tiger Shroff", srcset="")
+        
+
+    footer#footer 
+        div.foot Copyright &copy; www.hldanceacademy.com | All rights reserved
+    script
+      include ../static/style.css
